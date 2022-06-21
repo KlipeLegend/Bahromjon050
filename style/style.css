@@ -1,0 +1,1349 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background: #16191B;
+    overflow-x: hidden;
+    max-width: 1440px;
+    display: block;
+    margin: auto;
+    padding:24px 168px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+.nav-link{
+    list-style: none;
+}
+.nav-link > a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    transition: all .4s ease-in-out;
+    color: #C5D2DC;
+}
+.nav-link > a:hover{
+    color: blue;
+}
+/* buttons */
+.btn{
+    cursor: pointer;
+    background: #5D5DFF;
+    box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #5D5DFF;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+    transition: all .4s ease-in-out;
+}
+.btn a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.btn:hover{
+    border: 1px solid #5D5DFF;
+    background: #33363A;
+    color: #5D5DFF;
+}
+.btn_sign_up{
+    cursor: pointer;
+    padding: 8px 25px;
+}
+.header{
+    text-align: center;
+    margin: 80px 0 128px;
+}
+.header > h1{
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #D9E3EA;
+}
+.header > p{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+    margin: 16px 0 32px;
+}
+.button_center button{
+    padding: 12px 32px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.button_center button:nth-child(1){
+    border: 1px solid #5D5DFF;
+}
+.button_center button:hover{
+    background: #33363A;
+    color: #5D5DFF;
+}
+.button_center button:nth-child(2):hover{
+    border: 1px solid #5D5DFF;
+}
+.button_center button:nth-child(2){
+    background: #33363A;
+    border: 1px solid #33363A;
+    box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+    border-radius: 2px;
+    margin-left: 12px;
+}
+.button_center{
+    margin-bottom: 64px;
+}
+
+.video{
+    position: relative;
+    background: url("../img/imgs/annie-spratt@2x.png") center center/cover no-repeat;
+    height: 576px;
+}
+.video > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* build up */
+.build{
+    text-align: center;
+}
+h1{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #D9E3EA;
+}
+.build > p{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+    margin: 17px 0 80px;
+}
+/* cards */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 64px;
+}
+.card > h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #D9E3EA;
+    margin: 16px 0 8px;
+}
+.card > p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+}
+/* hr */
+hr{
+    height: 1px;
+    background: #33363A;
+    margin: 80px 0;
+}
+.menu{
+    display: none;
+}
+/* responsive  */
+.btn_menu{
+    position: absolute;
+    width: 126px;
+    height: 40px;
+    right: 0;  
+    opacity: 0; 
+    
+}
+.one{
+    text-align: center;
+}
+.one button{
+    cursor: pointer;
+    background: #C6F6D5;
+    border: 1px solid #36A269;
+    transition: all .7s ease-in-out;
+    box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+    border-radius: 15px;
+    color: #36A269;
+    padding: 4px 12px;
+    margin-bottom: 16px;
+}
+.one button:hover{
+    color: blue;
+    transform: scale(1.1);
+    border: 1px solid #2f00ff;
+    background: rgb(255, 255, 255);
+}
+.one p{
+    padding-top: 16px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+}
+.box_1{
+    gap: 64px;
+    display: grid;
+    margin-top: 80px;
+    align-items: center;
+    grid-template-columns: auto auto;
+}
+.box_2 img{
+    transition: all .6s ease-in-out;
+    cursor: pointer;
+}
+.box_2 img:hover{
+    transform: scale(1.1);
+}
+.boxheader a{
+    text-decoration: none;
+    font-family: 'Architects Daughter', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    color: #5D5DFF;
+}
+.boxheader h2{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.25px;
+    color: #D9E3EA;
+}
+.boxheader p{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+}
+.box_li{
+    cursor: pointer;
+    padding-top: 16px;
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+    transition: all .5s ease-in-out;
+    list-style: url('../icons/chacked.svg');
+}
+.box_li:hover{
+    transform: scale(1.1);
+}
+.box_li:active{
+    color: blue;
+}
+.donttake > p{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+}
+.profils{
+    margin: 80px 0;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+.profil{
+    padding: 24px;
+    /* cursor: pointer; */
+    background: #25282C;
+    transition: all .4s ease-in-out;
+}
+.profil:hover{
+    box-shadow: 5px 10px 15px rgba(255, 255, 255, 0.445);
+    transform: translateY(-10px);
+}
+.profil img{
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.profil img:hover{
+    transform: scale(1.5);
+}
+.profil p{
+    margin-top: 16px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+}
+.profil > hr{
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+.spam_1{
+    color: black;
+}
+.span_2{
+    color: blue;
+}
+.profil h6{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #D9E3EA;
+}
+.profil a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: blue;
+    text-decoration: none;
+}
+.stay{
+    padding: 64px 48px;
+    display: grid;
+    gap: 30px;
+    align-items: center;
+    background: #5D5DFF;
+    justify-content: space-between;
+    grid-template-columns: repeat(2,auto);
+}
+.loop > h1{
+    text-align: left;
+    margin-left: 0;
+}
+.loop p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.25px;
+    color: #E2E1FF;
+}
+.form input{
+    outline: 0;
+    background: #4B4ACF;
+    border: 1px solid #8D8DFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #ABABFF;
+    padding: 12px 50px 12px 16px;
+}
+.form button{
+    cursor: pointer;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #F4F4FF;
+    padding: 12px 31px 12px 32px;
+    background: #1a1a86;
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+    border-radius: 2px;
+}
+.form button:hover{
+    color: #5D5DFF;
+    background: #F4F4FF;
+}
+.footer{
+    padding: 64px 0;
+}
+.company{
+    gap: 169px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2,auto);
+}
+.foot p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+}
+.sarlavha{
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #D9E3EA;
+    text-decoration: none;
+}
+.li_web{
+    list-style: none;
+    transition: all .4s ease-in-out;
+}
+.paragraf{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #9BA9B4;
+    transition: all .4s ease-in-out;
+}
+.paragraf:hover{
+    color: blue;
+}
+.li_web:hover{
+    transform: scale(1.1);
+}
+.uls{
+    gap: 81px;
+    display: flex;
+}
+.tag{
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+}
+.tag > a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #9BA9B4;
+}
+.link{
+    gap: 16px;
+    display: flex;
+}
+.link img{
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.link img:hover{
+    transform: scale(1.3);
+}
+/* password */
+.password{
+    width: 100%;
+    margin-bottom: 192px;
+}
+.passheader h1{
+    margin: 140px 0 0 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #D9E3EA;
+}
+.open{
+    text-align: center;
+}
+.registe{
+    width: 433px;
+    margin: auto;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+.send{
+    width: 404.5px;
+    height: 52px;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+}
+.send img{
+    top: 13px;
+    left: 18px;
+    z-index: 999;
+    position: absolute;
+}
+.send button{
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: absolute;
+    background: #E53D3E;
+    box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+    border-radius: 2px;
+    transition: all .6s ease-in-out;
+    border: 1px solid #E53D3E;
+    padding: 12px 126px 12px 125px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+}
+.send button:hover{
+    color: red;
+    background: #e53d3d42;
+}
+label{
+    margin-top: 16px;
+    margin-bottom: 4px;
+    text-align: left;
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #C5D2DC;
+}
+span{
+    cursor: pointer;
+    color: red;
+}
+.registe input{
+    outline: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #707D86;
+    background: none;
+    border: 1px solid #33363A;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 12px 160px 12px 16px;
+}
+.registe button{
+    margin-left: 13px;
+    cursor: pointer;
+    background: #5D5DFF;
+    box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    transition: all .6s ease-in-out;
+    border: 1px solid #5D5DFF;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+    padding: 12px 173px 12px 171px;
+}
+.registe button:hover{
+    color: blue;
+    background: rgba(0, 0, 255, 0.11);
+}
+.sing{
+    color: blue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    text-decoration: none;
+}
+.privacy{
+    color: #C5D2DC;
+}
+.open p, .registe p{
+    padding: 0 11px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #707D86;
+}
+.open p{
+    margin: 24px 0;
+}
+.registe p{
+    margin: 16px 0 24px 0;
+}
+.registe h6{
+    padding: 24px 0 0 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+}
+/* LOG IN */
+.keep{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.keep a{
+    text-decoration: none;
+}
+.input p{
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #9BA9B4;
+}
+@media(max-width:1300px) {
+    .cards{
+        gap: 30px;
+    }
+    body{
+        padding:24px 60px;
+    }
+    .box_2 img{
+        width: 420px;
+    }
+    .passheader h1{
+        font-size: 47px;
+    }
+    .send{
+        margin-top: 50px;
+    }
+    .header > h1{
+        font-size: 40px;
+    }
+    h1{
+        font-size: 37px;
+    }
+    .one p{
+        font-size: 17px;
+    }
+    .boxheader a{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .boxheader h2{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 26px;
+        line-height: 42px;
+    }
+    .boxheader p{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .box_li{
+        padding-top: 16px;
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .profils{
+        margin: 70px 0;
+        gap: 24px;
+    }
+    .donttake > p{
+        font-size: 15px;
+        line-height: 30px;
+        margin-top: 9px
+    }
+    .profil img{
+        width: 45px;
+    }
+    .profil p{
+        margin-top: 16px;
+        font-size: 15px;
+        line-height: 27px;
+    }
+    .profil h6{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .profil a{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .profil > hr{
+        margin-top: 15px;
+        margin-bottom: 18px;
+    }
+    .stay{
+        padding: 55px 43px;
+        gap: 30px;
+    }
+    .loop > h1{
+        font-size: 30px;
+    }
+    .loop p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .form input{
+        font-size: 15px;
+        line-height: 24px;
+        padding: 9px 40px 9px 16px;
+    }
+    .form button{
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: 24px;
+        padding: 9px 28px 9px 29px;
+    }
+    .footer{
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .foot p{
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .sarlavha{
+        font-size: 13px;
+    }
+    .paragraf{
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .uls{
+        gap: 30px;
+    }
+    .tag{
+        margin-top: 33px;
+    }
+}
+@media (max-width:900px) {
+    .passheader h1{
+        font-size: 42px;
+    }
+    .send{
+        margin-top: 40px;
+    }
+}
+@media(max-width:850px) {
+    .cards{
+        grid-template-columns: auto auto;
+    }
+
+    body{
+        padding:24px 60px;
+    }
+    .header p, .build p, .one p, .donttake p{
+        font-size: 16px;
+    }
+    .header h1, .build h1, .one h1, .donttake h1{
+        font-size: 35px;
+    }
+    .card img{
+        width: 50px;
+    }
+    .card h1{
+        font-size: 20px;
+    }
+    .card p{
+        font-size: 14px;
+    }
+    .box_2 img:hover{
+        transform: scale(1.4);
+    }
+    .one p{
+        font-size: 15px;
+    }
+    .boxheader a{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .boxheader h2{
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .boxheader p{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .box_li{
+        padding-top: 12px;
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .box_2 img{
+        width: 270px;
+    }
+    .profils{
+        grid-template-columns: auto auto;
+    }
+    .stay{
+        padding: 25px 33px;
+        gap: 30px;
+    }
+    .loop > h1{
+        font-size: 27px;
+        line-height: 34px;
+    }
+    .loop p{
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .form input{
+        font-size: 14px;
+        line-height: 19px;
+        padding: 9px 40px 9px 16px;
+    }
+    .form button{
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 9px 26px 9px 24px;
+    }
+    .company{
+        gap: 70px;
+    }
+    .footer{
+        padding-top: 60px;
+        padding-bottom: 15px;
+    }
+    .foot p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .sarlavha{
+        font-size: 14px;
+    }
+    .paragraf{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .uls{
+        gap: 20px;
+    }
+    .tag{
+        margin-top: 23px;
+    }
+}
+@media(max-width:768px) {
+   
+    nav{
+        flex-direction: column;
+        position: relative;
+    }
+   
+    .nav-logo{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .nav-logo button{
+        padding: 3px 15px;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    .menu{
+        display: block;
+    }
+    /* btn_menu */
+   
+    .nav-item{
+        flex-direction: column;
+        /* display: none; */
+        position: absolute;
+        top:70px;
+        background: rgba(255, 255, 255, 0.294);
+        width: 100%;
+        padding: 20px;
+        backdrop-filter: blur(5px);
+        opacity: 0;
+        left: -200%;
+        transition: all 0.4s ease-in-out;
+    }
+    .btn_menu:checked ~ .nav-item{
+        opacity: 1;
+        left: 0;
+    }
+}
+@media (max-width:650px) {
+    body{
+        padding: 27px 24px;
+    }
+    .passheader h1{
+        font-size: 30px;
+        line-height: 45px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        font-weight: 800;
+    }
+    .open p{
+        margin: 17px 0;
+        margin-bottom: 0;
+    }
+    .send{
+        width: 340px;
+        height: 44px;
+        margin-top: 40px;
+    }
+    .send button{
+        padding: 12px 106px 12px 105px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+    .registe{
+        width: 390px;
+        margin: auto;
+    }
+    label{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #C5D2DC;
+    }
+    .registe input{
+        font-size: 14px;
+        line-height: 17px;
+        padding: 12px 150px 12px 16px;
+    }
+    .registe button{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 35px;
+        padding: 12px 143px 12px 141px;
+    }
+    .input p, a{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .registe h6{
+        padding: 15px 0 0 0;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+@media(max-width:600px) {
+
+    .header{
+        margin: 40px 0 18px;
+    }
+    .button_center{
+        margin-bottom: 0;
+    }
+    .video img{
+        height: 400px;
+    }
+    .video img:nth-child(2){
+        width: 70px;
+    }
+
+    body{
+        padding:24px 30px;
+    }
+    .header p, .build p, .one p, .donttake p{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .header h1, .build h1, .one h1, .donttake h1{
+        font-size: 25px;
+        line-height: 28px;
+    }
+   
+    .build > p{
+        margin: 20px 0;
+    }
+    .card img{
+        width: 35px;
+    }
+    .card > h1{
+        font-size: 16px;
+        line-height: 19px;
+        margin: 5px 0;
+    }
+    .card > p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .one p{
+        font-size: 15px;
+    }
+    .boxheader a{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .boxheader h2{
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .boxheader p{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .box_li{
+        padding-top: 12px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .box_2 img{
+        width: 200px;
+    }
+    .box_1{
+        gap: 34px;
+        display: grid;
+        margin-top: 20px;
+        align-items: center;
+        grid-template-columns: auto auto;
+    }
+    .one button{
+        font-size: 10px;
+        padding: 4px 8px;
+        margin-bottom: 10px;
+    }
+    hr{
+        margin: 30px 0;
+    }
+    .profils{
+        margin: 40px 0;
+        grid-template-columns: auto auto;
+    }
+    .stay{
+        padding: 25px 18px;
+        gap: 20px;
+    }
+    .loop > h1{
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .loop p{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .form input{
+        font-size: 12px;
+        line-height: 15px;
+        padding: 6px 20px 6px 16px;
+    }
+    .form button{
+        margin-left: -10px;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 6px 20px 6px 12px;
+    }
+    .company{
+        gap: 30px;
+        grid-template-columns: auto;
+    }
+    .uls{
+        gap: 50px;
+    }
+    .link img{
+        width: 30px;
+    }
+    .tag{
+        gap: 7px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media (max-width:500px) {
+    body{
+        padding: 27px 24px;
+    }
+    .password{
+        margin-bottom: 30px;
+    }
+    .passheader h1{
+        font-size: 25px;
+        line-height: 27px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+    .open p{
+        font-size: 12px;
+        margin: 13px 0;
+    }
+    .send{
+        width: 200px;
+        height: 40px;
+        margin-top: 30px;
+    }
+    .send button{
+        padding: 12px 30px 12px 60px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 10px;
+    }
+    .send img{
+        width: 23px;
+        top: 11px;
+        left: 9px;
+    }
+    .registe{
+        width: 300px;
+        margin: auto;
+    }
+    .registe p{
+        font-size: 11px;
+    }
+    label{
+        font-weight: 200;
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .registe input{
+        font-size: 12px;
+        line-height: 14px;
+        padding: 12px 86px 12px 16px;
+    }
+    .registe button{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        margin-left: 40px;
+        padding: 12px 90px 12px 90px;
+    }
+    .input p, a{
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .registe h6{
+        padding: 12px 0 0 0;
+        font-size: 11px;
+        line-height: 14px;
+    }
+}
+@media(max-width:576px) {
+    .video{
+        margin-top: 60px;
+        height: 276px;
+        margin-bottom: 80px;
+    }
+    .video img{
+        height: 350px;
+    }
+}   
+@media(max-width:490px){
+    .button_center button{
+        padding: 8px 20px;
+        margin-top:-10px;
+    }
+    body{
+        padding:24px 25px;
+    }
+    .header p, .build p, .one p, .donttake p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .header h1, .build h1, .one h1, .donttake h1{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .cards{
+         gap: 10px;
+     }
+    .card img{
+        width: 35px;
+    }
+    .card h1{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .card p{
+        font-size: 11px;
+        line-height: 13px;
+    }
+}
+@media(max-width:450px) {
+    .profils{
+        grid-template-columns: auto;
+    }
+}
+@media(max-width: 430px) {
+    .box_1{
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: auto;
+    }
+    .button_center button{
+        padding: 5px 16px;
+        margin-top:-10px;
+        font-size: 13px;
+    }
+    .donttake{
+        margin-top: 40px;
+    }
+    .profils{
+        margin: 30px 14px;
+        gap: 24px;
+    }
+    .donttake > p{
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 9px
+    }
+    .profil p{
+        margin-top: 12px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .profil h6{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .profil a{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .profil > hr{
+        margin-top: 9px;
+        margin-bottom: 13px;
+    }
+    .stay{
+        grid-template-columns: auto;
+    }
+    .stay{
+        padding: 25px 18px;
+        gap: 20px;
+    }
+    .loop > h1{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .loop p{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .form input{
+        font-size: 12px;
+        line-height: 15px;
+        padding: 6px 20px 6px 16px;
+    }
+    .form button{
+        margin-left: 0;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 6px 20px 6px 12px;
+    }
+    .company{
+        gap: 30px;
+    }
+    .video{
+        margin-top: 140px;
+        height: 276px;
+        margin-bottom: 60px;
+    }
+    .video img{
+        height: 350px;
+    }
+    .footer{
+        padding-top: 60px;
+        padding-bottom: 4px;
+    }
+    .foot p{
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .sarlavha{
+        font-size: 12px;
+    }
+    .paragraf{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .uls{
+        gap: 20px;
+    }
+    .tag{
+        margin-top: 23px;
+    }
+    .button_center{
+        margin-bottom: -80px;
+    }
+    .one button{
+        font-size: 8px;
+        padding: 3px 7px;
+    }
+    .box_1{
+        margin-left: 10px;
+    }
+    hr{
+        margin: 24px 0;
+    }
+    .box_2 img{
+        margin-left: 30px;
+    }
+    .box_2 img:hover{
+        transform: translate(10px) scale(1.2);
+    }
+}
+@media (max-width:360px) {
+    .passheader h1{
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+    .registe{
+        width: 250px;
+        margin: auto;
+        margin-top: -14px;
+    }
+    .registe input{
+        font-size: 12px;
+        line-height: 14px;
+        padding: 12px 40px 12px 16px;
+    }
+    .registe button{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        margin-left: 35px;
+        padding: 8px 70px 8px 70px;
+    }
+    .registe p{
+        margin-bottom: 8px;
+    }
+    .sing{
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
